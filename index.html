@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+      button {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h3></h3>
+    <button>INCREMENT</button>
+
+    <script>
+      let count = 0;
+
+      const btn = document.querySelector("button");
+      const text = document.querySelector("h3");
+      text.textContent = count;
+      btn.addEventListener("click", () => {
+        count++;
+        text.textContent = count;
+      });
+    </script>
+  </body>
+</html>
